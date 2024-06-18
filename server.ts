@@ -5,7 +5,6 @@ import _express from "express";
 import _dotenv from "dotenv";
 import _cors from "cors";
 import _fileUpload from "express-fileupload";
-import _cloudinary, { UploadApiResponse } from 'cloudinary';
 import _streamifier from "streamifier";
 import _axios from "axios";
 import _nodemailer from "nodemailer";
@@ -17,11 +16,11 @@ import { google } from "googleapis";
 _dotenv.config({ "path": ".env" });
 
 // Configurazione Cloudinary
-_cloudinary.v2.config({
+/*_cloudinary.v2.config({
     cloud_name: process.env.cloud_name,
     api_key: process.env.api_key,
     api_secret: process.env.api_secret
-});
+});*/
 
 // Variabili relative a MongoDB ed Express
 import { CommandStartedEvent, MongoClient, ObjectId } from "mongodb";
