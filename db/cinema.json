@@ -1,0 +1,38 @@
+[
+ {  "nome" : "Cinemà",
+    "luogo" : "Savigliano",
+    "sale" : 5,
+    "Programmazione" : [ 
+        {  
+			"NomeFilm" : "I soliti idioti 3",
+			"data" : "oggi"
+        },
+		{
+			"NomeFilm": "50 km all'ora",
+			"data": "oggi"
+		}
+    ]
+ },
+ {  "nome" : "Uci Cinemas",
+    "luogo" : "Moncalieri",
+    "sale" : 15,
+    "Programmazione" : [ 
+        {  
+			"NomeFilm" : "I soliti idioti 3",
+			"data" : "oggi"
+        },
+		{
+			"NomeFilm": "50 km all'ora",
+			"data": "oggi"
+		},
+		{
+			"NomeFilm": "Tutti tranne te",
+			"data": "oggi"
+		},
+		{
+			"NomeFilm": "Wonka",
+			"data": "oggi"
+		}
+    ]
+ }
+ ]

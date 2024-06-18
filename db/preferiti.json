@@ -1,0 +1,21 @@
+[
+{
+	"username": "pippo",
+	"Preferiti" : [ 
+		{  
+			"NomeFilm" : "I soliti idioti 3"
+		},
+		{
+			"NomeFilm": "50 km all'ora"
+		}
+	]
+},
+{
+	"username": "pluto",
+	"Preferiti" : [ 
+		{  
+			"NomeFilm" : "Tutti tranne te"
+		}
+	]
+}
+]
