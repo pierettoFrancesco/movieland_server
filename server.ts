@@ -31,17 +31,14 @@ const app = _express();
 
 // Creazione ed avvio del server https, a questo server occorre passare le chiavi RSA (pubblica e privata)
 // app è il router di Express, si occupa di tutta la gestione delle richieste https
-const HTTPS_PORT: number = parseInt(process.env.PORT);
+const HTTP_PORT: number = parseInt(process.env.PORT);
 let paginaErrore;
-const PRIVATE_KEY = _fs.readFileSync("./keys/privateKey.pem", "utf8");
-const CERTIFICATE = _fs.readFileSync("./keys/certificate.crt", "utf8");
 const ENCRYPTION_KEY = _fs.readFileSync("./keys/encryptionKey.txt", "utf8");
-const CREDENTIALS = { "key": PRIVATE_KEY, "cert": CERTIFICATE };
-const https_server = _https.createServer(CREDENTIALS, app);
+const http_server = _https.createServer(app);
 // Il secondo parametro facoltativo ipAddress consente di mettere il server in ascolto su una delle interfacce della macchina, se non lo metto viene messo in ascolto su tutte le interfacce (3 --> loopback e 2 di rete)
-https_server.listen(HTTPS_PORT, () => {
+http_server.listen(HTTP_PORT, () => {
     init();
-    console.log(`Server HTTPS in ascolto sulla porta ${HTTPS_PORT}`);
+    console.log(`Server HTTP in ascolto sulla porta ${HTTP_PORT}`);
 });
 
 function init() {
